@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15;
+}
+body {
+  display: flex;
+  background-color: #d4f8e8;
+  width: 72%;
+  float: right;
+}
+h2 {
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+}
+h2 span {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+h2 span::before {
+  content: "";
+  position: absolute;
+  width: 3em;
+  background: #00bfff;
+  height: 0.4em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -0.3em;
+}
+#Introduction ul,
+#What_should_you_already_know ul {
+  margin-left: 50px;
+}
+nav {
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ffd369;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+nav ul {
+  display: fixed;
+  text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+.main-section {
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  line-height: 25px;
+}
+#main-doc {
+  float: right;
+  justify-content: center;
+  margin: 0.5rem;
+  background-color: #d4f8e8;
+  padding: 20px;
+}
+p {
+  margin-left: 12px;
+}
+code {
+  background: #00bfff;
+  padding: 5px;
+  font-weight: bold;
+
+  margin-left: 2rem;
+}
+@media (max-width: 800px) {
+  nav {
+    width: 40%;
+    position: fixed;
+  }
+}
